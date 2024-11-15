@@ -16,6 +16,7 @@ class Driver(AbstractUser):
 
     class Meta:
         verbose_name = "Driver"
+        verbose_name_plural = "Drivers"
 
 
 class Car(models.Model):

@@ -5,6 +5,7 @@ from taxi.models import Car, Manufacturer, Driver
 
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
+    list_display = ("manufacturer", "model", )
     list_filter = [
         "manufacturer",
     ]
